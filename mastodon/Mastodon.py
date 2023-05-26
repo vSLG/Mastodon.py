@@ -63,6 +63,7 @@ from .preferences import Mastodon as Preferences
 from .push import Mastodon as Push
 from .admin import Mastodon as Admin
 from .streaming_endpoints import Mastodon as Streaming
+from .pleroma import Mastodon as Pleroma
 
 
 ###
@@ -72,7 +73,7 @@ from .streaming_endpoints import Mastodon as Streaming
 ###
 class Mastodon(Utility, Authentication, Accounts, Instance, Timeline, Statuses, Polls, Notifications, Hashtags,
                 Filters, Suggestions, Endorsements, Relationships, Lists, Trends, Search, Favourites, Reports,
-                Preferences, Push, Admin, Conversations, Media, Streaming):
+                Preferences, Push, Admin, Conversations, Media, Streaming, Pleroma):
     """
     Thorough and easy to use Mastodon
     API wrapper in Python.
